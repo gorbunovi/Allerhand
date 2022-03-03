@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_work/pres/pages/home_page.dart';
+import 'package:test_work/presentation/pages/catalog_page.dart';
+import 'package:test_work/presentation/pages/authorization _page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -17,19 +18,19 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             return MaterialPageRoute(builder: (BuildContext context) {
-              return const MyHomePage();
+              return const AuthorizationPage();
             });
-          case 'Catalog':
+          case '/CatalogPage':
             return MaterialPageRoute(builder: (BuildContext context) {
-              return const MyHomePage();
+              return const CatalogPage();
             });
           case 'PersonPage':
             return MaterialPageRoute(builder: (BuildContext context) {
-              return const MyHomePage();
+              return const AuthorizationPage();
             });
         }
       },
-      home: const MyHomePage(),
+      home: const AuthorizationPage(),
     );
   }
 }
