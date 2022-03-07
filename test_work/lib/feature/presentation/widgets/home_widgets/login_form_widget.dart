@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../services/focus_service.dart';
+import '../../services/focus_service.dart';
 
 Widget LoginForm(BuildContext context, String login, FocusNode currentFocus, FocusNode nextFocus){
   return TextFormField(

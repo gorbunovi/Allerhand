@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../services/focus_service.dart';
+import '../../services/focus_service.dart';
 
 Widget PasswordForm(BuildContext context, String password, FocusNode currentFocus, FocusNode nextFocus) {
   return TextFormField(

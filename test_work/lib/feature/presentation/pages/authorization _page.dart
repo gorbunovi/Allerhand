@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:test_work/presentation/widgets/home_widgets/button_form_widget.dart';
-import 'package:test_work/presentation/widgets/home_widgets/password_form_widget.dart';
-import 'package:test_work/presentation/widgets/home_widgets/text_form_widget.dart';
 import '../widgets/home_widgets/login_form_widget.dart';
+import '../widgets/home_widgets/password_form_widget.dart';
+import '../widgets/home_widgets/text_form_widget.dart';
 
 class AuthorizationPage extends StatefulWidget {
   const AuthorizationPage({Key? key}) : super(key: key);
