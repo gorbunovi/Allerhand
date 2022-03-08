@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_work/feature/presentation/bloc/person_list_cubit/person_list_cubit.dart';
+import 'package:test_work/feature/presentation/bloc/person_list_cubit/person_list_state.dart';
 import 'package:test_work/feature/presentation/pages/authorization%20_page.dart';
 import 'package:test_work/feature/presentation/pages/catalog_page.dart';
 import 'package:test_work/feature/presentation/pages/detail_page.dart';
