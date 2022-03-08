@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_work/common/app_colors.dart';
 import '../widgets/home_widgets/login_form_widget.dart';
 import '../widgets/home_widgets/password_form_widget.dart';
 import '../widgets/home_widgets/text_form_widget.dart';
@@ -38,7 +39,7 @@ class _AuthorizationPageState extends State<AuthorizationPage> {
     return Scaffold(
       body: Center(
         child: Container(
-          color: const Color(0xff6657A1),
+          color: AppColors.backgroundColor,
           padding: const EdgeInsets.all(15),
           child: Form(
             key: _formKey,
@@ -61,9 +62,9 @@ class _AuthorizationPageState extends State<AuthorizationPage> {
                 ),
                 ElevatedButton(
                   focusNode: _buttonFocus,
-                  style: ButtonStyle(backgroundColor:  MaterialStateProperty.all(const Color(0xff333333))),
+                  style: ButtonStyle(backgroundColor:  MaterialStateProperty.all(AppColors.buttonColor)),
                   onPressed: () => _submitForm(),
-                  child: const Text('Войти', style: TextStyle(color: Colors.white, fontSize: 21))
+                  child: const Text('Войти', style: TextStyle(color: AppColors.textWhite, fontSize: 21))
                 ),
               ],
             ),

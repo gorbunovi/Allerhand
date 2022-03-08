@@ -32,14 +32,14 @@ class PersonCard extends StatelessWidget {
             ),
             Text(
               '#${index+1}',
-              style: const TextStyle(color: Colors.white, fontSize: 20),
+              style: const TextStyle(color: AppColors.textWhite, fontSize: 20),
             ),
             const SizedBox(
               width: 10,
             ),
             const VerticalDivider(
               thickness: 2,
-              color: Colors.white,
+              color: AppColors.textWhite,
             ),
             const SizedBox(
               width: 10,
@@ -55,7 +55,7 @@ class PersonCard extends StatelessWidget {
                     person.name,
                     style: const TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: AppColors.textWhite,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -80,7 +80,7 @@ class PersonCard extends StatelessWidget {
                       Expanded(
                         child: Text(
                           '${person.status} - ${person.species}',
-                          style: const TextStyle(color: Colors.white),
+                          style: const TextStyle(color: AppColors.textWhite),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -99,7 +99,7 @@ class PersonCard extends StatelessWidget {
                   ),
                   Text(
                     person.location.name,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: AppColors.textWhite),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -117,7 +117,7 @@ class PersonCard extends StatelessWidget {
                   ),
                   Text(
                     person.origin.name,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: AppColors.textWhite),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

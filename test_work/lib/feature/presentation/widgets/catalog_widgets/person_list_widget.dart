@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:test_work/common/app_colors.dart';
 import 'package:test_work/feature/domain/entities/person_entity.dart';
 import 'package:test_work/feature/presentation/bloc/person_list_cubit/person_list_cubit.dart';
 import 'package:test_work/feature/presentation/bloc/person_list_cubit/person_list_state.dart';
@@ -40,7 +41,7 @@ class PersonsList extends StatelessWidget {
       } else if (state is PersonError) {
         return Text(
           state.message,
-          style: const TextStyle(color: Colors.white, fontSize: 25),
+          style: const TextStyle(color: AppColors.textBlack, fontSize: 25),
         );
       }
       return ListView.builder(
@@ -65,7 +66,7 @@ class PersonsList extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.all(8.0),
       child: Center(
-        child: CircularProgressIndicator(),
+        child: CircularProgressIndicator(color: AppColors.backgroundColor,),
       ),
     );
   }

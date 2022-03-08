@@ -14,17 +14,17 @@ class PersonDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.textWhite,
         actions: [SingOut(context),],
       ),
       bottomNavigationBar: Container(
         height: 50,
-        color: Colors.white,
+        color: AppColors.textWhite,
         child: Center(
           child: ElevatedButton(
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(const Color(0xff333333))),
             onPressed: (){Navigator.of(context).pop();},
-            child: const Text('Назад', style: TextStyle(color: Colors.white),),
+            child: const Text('Назад', style: TextStyle(color: AppColors.textWhite),),
           ),
         ),
       ),
@@ -51,7 +51,7 @@ class PersonDetailPage extends StatelessWidget {
               person.name,
               style: const TextStyle(
                 fontSize: 28,
-                color: Colors.black,
+                color: AppColors.textBlack,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -75,7 +75,7 @@ class PersonDetailPage extends StatelessWidget {
                 Text(
                   person.status,
                   style: const TextStyle(
-                    color: Colors.black,
+                    color: AppColors.textBlack,
                     fontSize: 16,
                   ),
                   maxLines: 1,
@@ -113,7 +113,7 @@ class PersonDetailPage extends StatelessWidget {
       Text(
         value,
         style: const TextStyle(
-          color: Colors.black,
+          color: AppColors.textBlack,
         ),
       ),
       const SizedBox(
