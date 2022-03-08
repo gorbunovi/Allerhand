@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:test_work/common/app_colors.dart';
 
 class PersonCacheImage extends StatelessWidget {
   final String imageUrl;
@@ -44,7 +45,7 @@ class PersonCacheImage extends StatelessWidget {
       },
       placeholder: (context, url) {
         return const Center(
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(color: AppColors.backgroundColor,),
         );
       },
       errorWidget: (context, url, error) {
