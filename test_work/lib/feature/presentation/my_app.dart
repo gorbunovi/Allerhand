@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:test_work/feature/domain/entities/person_entity.dart';
 import 'package:test_work/feature/presentation/bloc/person_list_cubit/person_list_cubit.dart';
 import 'package:test_work/feature/presentation/bloc/person_list_cubit/person_list_state.dart';
 import 'package:test_work/feature/presentation/pages/authorization%20_page.dart';
@@ -33,6 +34,11 @@ class MyApp extends StatelessWidget {
             case '/CatalogPage':
               return MaterialPageRoute(builder: (BuildContext context) {
                 return const CatalogPage();
+              });
+            case '/Detail':
+              final args = settings.arguments as Map<String, dynamic>;
+              return MaterialPageRoute(builder: (BuildContext context) {
+                if(args.containsKey('person')) return const PersonDetailPage(person: args['person']);
               });
           }
         },

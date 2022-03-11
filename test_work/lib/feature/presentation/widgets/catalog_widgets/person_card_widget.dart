@@ -14,10 +14,11 @@ class PersonCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,MaterialPageRoute(
-            builder: (context) => PersonDetailPage(person: person),
-          ),
-        );
+        // Navigator.push(context,MaterialPageRoute(
+        //     builder: (context) => PersonDetailPage(person: person),
+        //   ),
+        // );
+        Navigator.of(context).pushNamed('/Detail', arguments: {'person': person});
       },
       child: Container(
         margin: EdgeInsets.all(15),
